@@ -1,12 +1,16 @@
 "use client"
 import React from 'react'
-import { PinContainer } from './ui/3d-pin'
+import dynamic from "next/dynamic";
+const PinContainer = dynamic(
+  () => import("./ui/3d-pin").then((mod) => mod.PinContainer),
+  { ssr: false }
+);
 import { projects } from "@/data";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const RecentProjects = () => {
   return (
-    <div className='py-20'>
+    <div  id="recent-projects"  className='py-20'>
       <h1 className='heading'>
         A small selection of {' '}
         <span className='text-purple'>recent projects</span>

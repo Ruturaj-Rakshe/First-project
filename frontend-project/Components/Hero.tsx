@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/textgeneff'
@@ -5,6 +6,12 @@ import MagicButton from './ui/magicbutton'
 import { FaLocationArrow } from 'react-icons/fa';
 
 const Hero = () => {
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('recent-projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className='pb-20 pt-36'>
       <div>
@@ -26,14 +33,14 @@ const Hero = () => {
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl '>
             Hello, I&apos;m Ruturaj, a Next Js developer based in Bahrain
           </p>
-          <a href='about'>
-            <MagicButton 
-              title="Present my work"
-              icon={<FaLocationArrow/>}
-              position='right'
 
-            />
-          </a>
+          <MagicButton 
+            title="Present my work"
+            icon={<FaLocationArrow />}
+            position='right'
+            handleClick={scrollToProjects} // Added onClick handler
+          />
+         
         </div>
       </div>
     </div>
