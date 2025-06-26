@@ -8,7 +8,7 @@ import { useCallback } from 'react';
 
 const Hero = () => {
   const scrollToProjects = useCallback(() => {
-  if (typeof document !== 'undefined') {
+  if (typeof window !== 'undefined') {
     const projectsSection = document.getElementById('recent-projects');
     if (projectsSection) {
       projectsSection.scrollIntoView({ behavior: 'smooth' });
