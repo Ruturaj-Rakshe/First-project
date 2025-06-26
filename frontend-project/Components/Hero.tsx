@@ -4,14 +4,17 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/textgeneff'
 import MagicButton from './ui/magicbutton'
 import { FaLocationArrow } from 'react-icons/fa';
+import { useCallback } from 'react';
 
 const Hero = () => {
-  const scrollToProjects = () => {
+  const scrollToProjects = useCallback(() => {
+  if (typeof document !== 'undefined') {
     const projectsSection = document.getElementById('recent-projects');
     if (projectsSection) {
       projectsSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }
+}, []);
   return (
     <div className='pb-20 pt-36'>
       <div>
