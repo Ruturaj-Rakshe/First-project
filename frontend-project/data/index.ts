@@ -1,3 +1,5 @@
+
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -29,7 +31,7 @@ export const navItems = [
     {
       id: 3,
       title: "My Tech Stack",
-      description: "Recently started Backend Dev and I strive to constantly improve",
+      description: "I'm currently learning DEVOPS and I strive to constantly improve",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -38,8 +40,8 @@ export const navItems = [
     },
     {
       id: 4,
-      description: "Passionate web developer with a strong foundation in creating responsive and user-centric digital experiences",
       title: "Summary",
+      description: "Passionate web developer with a strong foundation in creating responsive and user-centric digital experiences",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -49,7 +51,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "I'm currently building a hospital website using MERN.",
+      title: "Currently working in acquiring an AWS certification",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -73,35 +75,19 @@ export const navItems = [
     {
       id: 1,
       title: "Growing with Cybersecurity",
-      des: "This was the first ever frontend project I had worked upon, using tutorials to understand how ReactJs and TailwindCSS work",
+      des: "Designed and developed independently for Gearsec, Cybersecurity Startup which I interned at.",
       img: "Screenshot.png",
       iconLists: ["/re.svg", "/tail.svg"],
-      link: "https://github.com/Ruturaj-Rakshe/Data-Finance.git",
+      link: "https://data-finance-roan-rhod.vercel.app/",
     },
     {
       id: 2,
-      title: "Project-2",
-      des: "Hospital website",
-      img: "",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "I'll give a link",
-    },
-    {
-      id: 3,
-      title: "ML Project",
-      des: "In the works",
-      img: "",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "hmm",
-    },
-    {
-      id: 4,
-      title: "Project-4",
-      des: "Also in the works",
-      img: "",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "I'll give a link",
-    },
+      title: "Chatty",
+      des: "This is a full-stack project I made using MERN and socketio, this is a self-developed project which helped me learn a lot about real-time communication.",
+      img: "Chatty.png",
+      iconLists: ["/re.svg","/tail.svg", "/socket.png"],
+      link: "https://full-stack-chat-app-7ll3.onrender.com/",
+    }
   ];
   
 
@@ -109,7 +95,7 @@ export const navItems = [
     {
       id: 1,
       title: "Frontend Engineer Intern (At Gearsec)",
-      desc: "Assisted in the development of a web-based platform using ReactJs, enhancing interactivity.",
+      desc: " Developed Frontend of a web-based platform using ReactJs, enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
@@ -140,13 +126,11 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
+      link: "https://github.com/Ruturaj-Rakshe"
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://linkedin.com/in/ruturaj-rakshe-11722322a/"
     },
   ];

@@ -17,7 +17,7 @@ const footer = () => {
         <p className='text-white-200 md:mt-10 my-5 text-center'>
             Reach out to me today and let's discuss how I can help you achieve your goals
         </p>
-        <a href='mail to: rutu.bahrain@gmail.com'>
+        <a href='mailto: rutu.bahrain@gmail.com'>
             <MagicButton title="Let's get in touch" 
             icon = {<FaLocationArrow/>}
             position='right'
@@ -27,13 +27,16 @@ const footer = () => {
 
       </div>
       <div className='flex mt-16 md:flex-row flex-col justify-between items-center'>
-        <p className='md:text-base text-sm md:font-normal font-light '>Copyright © 2024 Ruturaj</p>
+        <p className='md:text-base text-sm md:font-normal font-light p-2'>Copyright © 2024 Ruturaj</p>
         <div className='flex items-center md:gap-3 gap-6'>
             {socialMedia.map((profile) => (
-                <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-                    <img src={profile.img} alt={profile.id.toString()}
-                    width={20} height={20} />
-                </div>
+                <a key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'
+                  href={profile.link}
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  <img src={profile.img} alt={profile.id.toString()}
+                  width={20} height={20} />
+                </a>
             ))}
 
         </div>
