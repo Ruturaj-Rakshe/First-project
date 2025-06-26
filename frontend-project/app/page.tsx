@@ -8,7 +8,7 @@ import Grid from '@/Components/Grid';
 import RecentProjects from "@/Components/RecentProjects";
 import Experience from '@/Components/Experience';
 import Approach from '@/Components/Approach'
-//import Footer from '@/Components/Footer'
+import Footer from '@/Components/Footer'
 export default function Home() {
   return (
     <main className="relative bg-black flex justify-center
@@ -24,7 +24,7 @@ export default function Home() {
         <RecentProjects/>
         <Experience/>
         <Approach/>
-        {/* <Footer/> */}
+        <Footer/>
        
       </div>
     </main>
