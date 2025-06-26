@@ -1,5 +1,6 @@
 import React from "react";
-import Hero from "../Components/Hero"
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("../Components/Hero"), { ssr: false });
 import { FloatingNav } from "@/Components/ui/Floatingnavbar";
 import { FaHome } from 'react-icons/fa';
 import Grid from '@/Components/Grid';
