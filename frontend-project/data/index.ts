@@ -78,7 +78,7 @@ export const navItems = [
       des: "Designed and developed independently for Gearsec, Cybersecurity Startup which I interned at.",
       img: "Screenshot.png",
       iconLists: ["/re.svg", "/tail.svg"],
-      link: "https://data-finance-roan-rhod.vercel.app/",
+      link: "https://data-finance-roan-rho.vercel.app/",
     },
     {
       id: 2,
